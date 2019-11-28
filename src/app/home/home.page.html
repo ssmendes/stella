@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ionic - Json
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar translucent color="light">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let title of stella">
+    <ion-card-header>
+      <img src="\assets\img\{{ title.name }}.jpg"><br>
+      {{title.name}}
+    </ion-card-header>
+    <ion-card-content>
+      {{ title.type }}<br>
+      {{ title.trainner }}<br>
+      {{ title.value }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
